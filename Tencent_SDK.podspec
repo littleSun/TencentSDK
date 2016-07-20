@@ -31,6 +31,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :http => "http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/doc/iOS_SDK_V3.1.0.zip" }
   s.source_files = "**/*.{framework,bundle}"
+  s.frameworks = "Security","SystemConfiguration","CoreTelephony"
+  s.libraries = "z", "iconv", "c++","sqlite3"
   # s.vendored_libraries = "**/libWeChatSDK.a"
   s.requires_arc = true
 
