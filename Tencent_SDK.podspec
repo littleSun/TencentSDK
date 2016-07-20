@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tencent_SDK"
-  s.version      = "3.0.1"
+  s.version      = "3.1.0"
   s.summary      = "Tencent Open iOS SDK."
 
   s.homepage     = "https://connect.qq.com"
@@ -24,16 +24,20 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author = { "Tencent" => "https://connect.qq.com" }
+  s.author = { "Tencent" => "http://connect.qq.com" }
 
   # s.platform     = :ios
   s.platform     = :ios, "6.0"
 
   s.source       = { :http => "http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/doc/iOS_SDK_V3.1.0.zip" }
-  s.source_files = "**/*.{framework,bundle}"
+
+  s.resources = "**/*.bundle"
+  # s.vendored_libraries = "**/*.framework"
+  s.vendored_frameworks = "**/*.framework"
+
   s.frameworks = "Security","SystemConfiguration","CoreTelephony"
   s.libraries = "z", "iconv", "c++","sqlite3"
-  # s.vendored_libraries = "**/libWeChatSDK.a"
+
   s.requires_arc = true
 
 end
