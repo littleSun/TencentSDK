@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Tencent_SDK"
-  s.version      = "3.1.0"
+  s.version      = "3.1.3"
   s.summary      = "Tencent Open iOS SDK."
 
   s.homepage     = "https://connect.qq.com"
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios
   s.platform     = :ios, "6.0"
 
-  s.source       = { :http => "http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/doc/iOS_SDK_V3.1.0.zip" }
+  s.source       = { :http => "http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/doc/iOS_SDK_V3.1.3.zip" }
 
   s.resources = "**/*.bundle"
   # s.vendored_libraries = "**/*.framework"
